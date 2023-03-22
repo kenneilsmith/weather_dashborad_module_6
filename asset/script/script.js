@@ -221,18 +221,13 @@ function setRecentSearchButtons() {
     }
 }
 
+//function that gets the weather based on the user selecting a recent search button
 $(document).on('click', '.recent-search-button', function () {
     var searchedCity = $(this).text()
     getWeatherByCitySearch(searchedCity)
     getWeatherForecastByCitySearch(searchedCity)
     $('#search-input').val('')
 })
-
-
-
-
-
-
 
 setRecentSearchButtons()
 getLocalWeatherWithLongLat()
