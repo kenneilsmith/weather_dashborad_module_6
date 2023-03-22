@@ -10,6 +10,10 @@ body {
     height: 100vh;
 }
 
+.main-container {
+
+    height: 100%;
+}
 
 .header {
     background: rgb(0, 114, 255);
@@ -39,6 +43,7 @@ body {
 .right-section {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
