@@ -20,7 +20,7 @@
         <main class="main-container d-flex ">
             <section class="left-section me-3">
                 <div class="search d-flex flex-column mb-3">
-                    <label for="search-city" class="mb-1 rounded-2"><span class="fs-6 fw-semibold">Search for a
+                    <label for="search-city" class="mb-1 rounded-2"><span class="fs-6 fw-semibold">Search by
                             City:</span></label>
                     <input type="text" name="search-city" id="search-input" class="form-control" placeholder="">
                     <button type="button" id="search-button" class="btn btn-primary btn-sm"><i
@@ -29,18 +29,6 @@
                 <h4 class='border-bottom text-center fs-5'>Previous Search</h4>
                 <div class="search-history btn-group d-flex flex-column">
 
-                    <!-- <ul id="history-list" class="list-group">
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">New York</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Los Angeles</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Chicago</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Houston</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Phoenix</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Philadelphia</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">San Antonio</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">San Diego</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">Dallas</li>
-                        <li class="favorite-city list-group-item list-group-item-dark mb-2">San Jose</li>
-                    </ul> -->
                 </div>
             </section>
             <section class="right-section d-flex flex-column justify-content-center alig">
@@ -48,21 +36,21 @@
                     <!-- <h2 class="text-center">Current City</h2> -->
                     <div
                         class="current-weather-info border border-warning rounded-2 p-2 bg-warning bg-opacity-50 text-center">
-                        <h2 id="city-name" class=" h1 fw-bold ">New York</h2>
-                        <p id="current-date" class="t text-primary fs-1">10/10/2021</p>
+                        <h2 id="city-name" class=" h1 fw-bold ">Loading local weather...</h2>
+                        <p id="current-date" class="t text-primary fs-1"></p>
                         <!-- <p id="current-weather-icon"><i class="fa-solid fa-sun"></i></p> -->
-                        <img id="current-weather-icon" src="" alt=" Weather icon">
-                        <p id="current-weather-description">Cloudy</p>
-                        <p id="current-temp">75°</p>
-                        <p id="current-wind-speed">Wind Speed: 10 MPH</p>
-                        <p id="current-humidity">Humidity: 75%</p>
+                        <img id="current-weather-icon">
+                        <p id="current-weather-description"></p>
+                        <p id="current-temp"></p>
+                        <p id="current-wind-speed"></p>
+                        <p id="current-humidity"></p>
                     </div>
                 </div>
                 <h3 class="forecast-heading text-center text-primary mb-5 mt-5 border-bottom pb-3">5-Days Forecast
                 </h3>
-                <div class="_5-days-forecast mt-4 mb-5 d-flex justify-content-center">
+                <div class="forecast mt-4 mb-5 d-flex justify-content-center">
 
-                    <div class="forecast-container d-flex flex-wrap">
+                    <!-- <div class="forecast-container d-flex flex-wrap">
                         <div
                             class="forecast-day-1 me-2 border border-2 border-dark rounded-4 p-2 bg-primary text-white">
                             <p class="forecast-date-1">10/10/2021</p>
@@ -101,15 +89,15 @@
                             <p class="forecast-weather-temp-5">75°</p>
                             <p class="forecast-weather-wind-5">Wind Speed: 10 MPH</p>
                             <p class="forecast-weather-humidity-5">Humidity: 75%</p>
-                        </div>
-                    </div>
+                        </div> -->
                 </div>
+    </div>
 
-            </section>
-        </main>
-        <footer class="footer text-center bg-primary bg-gradient">
-            &copy Copyright 2023 Damian Smith
-        </footer>
+    </section>
+    </main>
+    <footer class="footer text-center bg-primary bg-gradient">
+        &copy Copyright 2023 Damian Smith
+    </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
