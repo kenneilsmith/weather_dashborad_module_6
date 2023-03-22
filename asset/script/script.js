@@ -55,7 +55,7 @@ function getLocalWeatherForecastWithLongLat() {
         longitude = locationdata.coords.longitude
         latitude = locationdata.coords.latitude
         // pass the longitude and latitude to the open weather map api
-        var weatherMapURL = "http://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + apiKey + "&units=metric"
+        var weatherMapURL = "https://api.openweathermap.org/data/2.5/forecast?lat=" + latitude + "&lon=" + longitude + "&appid=" + apiKey + "&units=metric"
         $.get(weatherMapURL).then(function (data) {
             console.log(data)
             //empty the forecast div
@@ -105,7 +105,7 @@ function getLocalWeatherForecastWithLongLat() {
 
 //function that gets the weather based on the city name
 function getWeatherByCitySearch(cityName) {
-    var weatherMapURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey + "&units=metric"
+    var weatherMapURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey + "&units=metric"
     // get the data from the api and set the text of the html elements then append them to the page
     $.get(weatherMapURL).then(function (data) {
         $('#city-name').text(data.name)
@@ -123,7 +123,7 @@ function getWeatherByCitySearch(cityName) {
 }
 //function that gets the weather forecast based on the city name
 function getWeatherForecastByCitySearch(cityName) {
-    var weatherMapURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey + "&units=metric"
+    var weatherMapURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey + "&units=metric"
     // get the data from the api and set the text of the html elements then append them to the page
     $.get(weatherMapURL).then(function (data) {
         $('.forecast').empty()
