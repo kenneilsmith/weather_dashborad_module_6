@@ -1,6 +1,6 @@
 # weather_dashborad_module_6
 
-This web application is used to create appointments in a work hour scheduler
+This web application is used to get the weather by city and current location
 
 ## Table of Contents
 
@@ -22,12 +22,15 @@ This web application is used to create appointments in a work hour scheduler
 
 ## Features
 
-- A user select the length of the desired password 
-- A user and select the options of adding uppercase, lowercase, numbers and/or special characters 
-- User will be given a password that matches the criteria \
+- On load the app request the current location of the user and displays the current weather and 5 days forecast
+- The user can search for a specific city and that city's current weather and 5 days forecast will be displayed
+- The previous 10 searched cities can be accessed for fast search
+
 ![](./screenshots/Screenshot-1.png)
 ![](./screenshots/Screenshot-2.png)
 ![](./screenshots/Screenshot-3.png)
+![](./screenshots/Screenshot-4.png)
+![](./screenshots/Screenshot-5.png)
 
 
 
