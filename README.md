@@ -18,7 +18,7 @@ This web application is used to create appointments in a work hour scheduler
 
 ## Usage
 
-- click the link - https://kenneilsmith.github.io/password_generator_mod_3/
+- click the link - (https://kenneilsmith.github.io/weather_dashborad_module_6/)
 
 ## Features
 
